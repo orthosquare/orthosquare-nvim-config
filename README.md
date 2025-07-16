@@ -25,21 +25,4 @@ Packages for nvim. The following is installed from using the youtube channel [Mr
 
 ### Markdown
 
-- [ ] render-markdown
-
-```rust
-fn main() {
-    print("Hello world!");
-}
-```
-
-|foo|bar|
-|---|---|
-|a|b|
-|c|d|
-
-> [!Note]
-> This is a note.
-
-> [!Warning]
-> This is a warning.
+- [X] render-markdown
