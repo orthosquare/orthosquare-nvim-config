@@ -39,13 +39,14 @@ return {
 
 		-- (Default) Only show the documentation popup when manually triggered
 		completion = {
+			enabled = true,
 			documentation = { auto_show = false },
 			menu = {
 				-- Don't automatically show the completion menu
-				auto_show = false,
+				auto_show = true,
 
 				border = "rounded",
-				ghost_text = { enabled = true },
+				-- ghost_text = { enabled = true },
 				-- 	-- nvim-cmp style menu
 				-- 	draw = {
 				-- 		columns = {
@@ -62,6 +63,10 @@ return {
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
 		},
+
+		-- command_line = {
+		-- 	sources = false,
+		-- },
 
 		-- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
 		-- You may use a lua implementation instead by using `implementation = "lua"` or fallback to the lua implementation,
