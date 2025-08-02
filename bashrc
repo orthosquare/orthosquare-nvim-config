@@ -716,3 +716,5 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2025-07-11 06:41:04
 export PATH="$PATH:/home/michael/.local/bin"
 eval "$(register-python-argcomplete pipx)"
+
+export PATH="$PATH:/home/michael/local-inst/local-scripts/bin"
