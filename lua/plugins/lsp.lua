@@ -164,7 +164,7 @@ return {
 		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
 			severity_sort = true,
-			float = { border = "rounded", source = "if_many" },
+			float = { border = "rounded", source = "always" },
 			underline = { severity = vim.diagnostic.severity.ERROR },
 			signs = {
 				text = {
@@ -188,6 +188,10 @@ return {
 				end,
 			},
 		})
+
+		-- This controls the open_float window. Turn this off if it becomes annoying
+		vim.o.updatetime = 500
+		vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, max_width=80})]]
 
 		-- LSP servers and clients are able to communicate to each other what features they support.
 		--  By default, Neovim doesn't support everything that is in the LSP specification.
