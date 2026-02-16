@@ -41,3 +41,5 @@ require("config.keymaps")
 
 -- Show keys layout.
 -- vim.cmd("ShowkeysToggle")
+
+vim.opt.textwidth = 80
